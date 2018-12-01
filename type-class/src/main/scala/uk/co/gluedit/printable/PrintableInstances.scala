@@ -6,4 +6,7 @@ object PrintableInstances {
 
   implicit val intPrintable: Printable[Int] = (value: Int) => value.toString
 
+  implicit val catPrintable: Printable[Cat] =
+    (value: Cat) => s"${value.name} is a ${value.age} year-old ${value.colour} cat."
+
 }
