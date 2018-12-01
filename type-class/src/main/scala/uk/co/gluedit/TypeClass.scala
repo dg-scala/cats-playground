@@ -22,5 +22,12 @@ object TypeClass extends App {
   print(micka)
   print(cicka)
   print(tigger)
+
+  println("And now class extension, i.e. interface syntax:")
+  import uk.co.gluedit.printable.PrintableSyntax._
   
+  micka.print
+  cicka.print
+  tigger.print
+
 }
