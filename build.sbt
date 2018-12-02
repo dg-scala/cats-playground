@@ -1,4 +1,4 @@
-name := "catsPlayground"
+name := "cats-playground"
 
 ThisBuild / version := "1.0.0-SNAPSHOT"
 
@@ -13,6 +13,11 @@ lazy val commonLibraries = Seq(
 )
 
 lazy val typeClass = (project in file("type-class"))
+  .settings(
+    libraryDependencies ++= commonLibraries
+  )
+
+lazy val monoidAndSemigroup = (project in file("monoid-and-semigroup"))
   .settings(
     libraryDependencies ++= commonLibraries
   )

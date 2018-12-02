@@ -1,1 +1,1 @@
-name := "typeClass"
+name := "type-class"
