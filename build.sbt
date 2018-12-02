@@ -1,10 +1,10 @@
 name := "catsPlayground"
 
-version := "1.0.0-SNAPSHOT"
+ThisBuild / version := "1.0.0-SNAPSHOT"
 
-scalacOptions += "-Ypartial-unification"
+ThisBuild / scalacOptions += "-Ypartial-unification"
 
-libraryDependencies ++= Seq(
+lazy val commonLibraries = Seq(
   "org.typelevel" %% "cats-core" % "1.5.0-RC1",
   "org.typelevel" %% "cats-kernel" % "1.5.0-RC1",
   "org.typelevel" %% "cats-macros" % "1.5.0-RC1",
@@ -12,4 +12,7 @@ libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-testkit" % "1.5.0-RC1" % Test
 )
 
-lazy val typeClass = project in file("type-class")
+lazy val typeClass = (project in file("type-class"))
+  .settings(
+    libraryDependencies ++= commonLibraries
+  )
