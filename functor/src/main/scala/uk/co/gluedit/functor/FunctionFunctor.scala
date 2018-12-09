@@ -1,4 +1,4 @@
-package co.uk.gluedit.functor
+package uk.co.gluedit.functor
 
 import cats.instances.function._
 import cats.syntax.functor._

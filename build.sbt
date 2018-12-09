@@ -25,6 +25,7 @@ lazy val monoidAndSemigroup = (project in file("monoid-and-semigroup"))
   )
 
 lazy val functor = (project in file("functor"))
+  .dependsOn(typeClass)
   .settings(
     libraryDependencies ++= commonLibraries
   )

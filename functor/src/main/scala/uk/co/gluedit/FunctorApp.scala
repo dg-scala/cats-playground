@@ -1,4 +1,4 @@
-package co.uk.gluedit
+package uk.co.gluedit
 
 object FunctorApp extends App {
 

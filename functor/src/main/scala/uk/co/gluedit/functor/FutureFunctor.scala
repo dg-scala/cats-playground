@@ -1,4 +1,4 @@
-package co.uk.gluedit.functor
+package uk.co.gluedit.functor
 
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._
