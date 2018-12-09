@@ -12,12 +12,19 @@ lazy val commonLibraries = Seq(
   "org.typelevel" %% "cats-testkit" % "1.5.0-RC1" % Test
 )
 
+libraryDependencies ++= commonLibraries
+
 lazy val typeClass = (project in file("type-class"))
   .settings(
     libraryDependencies ++= commonLibraries
   )
 
 lazy val monoidAndSemigroup = (project in file("monoid-and-semigroup"))
+  .settings(
+    libraryDependencies ++= commonLibraries
+  )
+
+lazy val functor = (project in file("functor"))
   .settings(
     libraryDependencies ++= commonLibraries
   )
