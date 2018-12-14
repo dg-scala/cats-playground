@@ -29,3 +29,8 @@ lazy val functor = (project in file("functor"))
   .settings(
     libraryDependencies ++= commonLibraries
   )
+
+lazy val monad = (project in file("monad"))
+  .settings(
+    libraryDependencies ++= commonLibraries
+  )
