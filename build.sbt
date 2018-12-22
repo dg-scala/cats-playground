@@ -34,3 +34,8 @@ lazy val monad = (project in file("monad"))
   .settings(
     libraryDependencies ++= commonLibraries
   )
+
+lazy val trampolines = (project in file("trampolines"))
+  .settings(
+    libraryDependencies ++= commonLibraries
+  )
