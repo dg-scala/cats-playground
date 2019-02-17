@@ -38,7 +38,16 @@ object PostOrderCalc {
 
 /** Example of use
   *
+  * (1)
   *   val program = evalAll(List("1", "2", "+", "3", "*"))
+  *   program.runA(Nil).value
+  *
+  * (2)
+  *   val program = for {
+  *     _   <- evalAll(List("1", "2", "+")
+  *     _   <- evalAll(List("3", "4", "+")
+  *     ans <- evalOne("*")
+  *   } yield ans
   *   program.runA(Nil).value
   *
   */
