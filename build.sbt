@@ -19,6 +19,11 @@ lazy val typeClass = (project in file("type-class"))
     libraryDependencies ++= commonLibraries
   )
 
+lazy val monadTransformers = (project in file("monad-transformers"))
+  .settings(
+    libraryDependencies ++= commonLibraries
+  )
+
 lazy val monoidAndSemigroup = (project in file("monoid-and-semigroup"))
   .settings(
     libraryDependencies ++= commonLibraries
